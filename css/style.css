@@ -50,11 +50,14 @@ img {
  .wrapper {
     max-width: 1060px;  
     margin: 0 auto;  /* С†РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ РІ СЂРѕРґРёС‚РµР»Рµ */
+    padding: 0 20px;
  }
 
  .wrapper_full{
     max-width: 1260px;  
     margin: 0 auto;
+    padding: 0 20px;
+
  }
 
  .section_title {
@@ -123,6 +126,33 @@ img {
  .header_link:hover, .header_link:focus, .header_link:active {
      opacity: .75;
  }
+
+ .burger {
+     display: none;
+     width: 40px;
+     height: 30px;
+     position: relative;
+ }
+
+ .burger_line{
+     display: block;
+     height:1px;
+     width: 100%;
+     background-color: #FFFFFF;
+     position: absolute;
+     right: 0;
+ }
+ .burger_line_top{
+     top: 0;
+ }
+ .burger_line_center{
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+ .burger_line_bottom{
+     bottom: 0;
+ }
+
  
  /* Header-styles end */
 
@@ -559,9 +589,61 @@ img {
     opacity:0.71;
 }
 
-
-
-
-
 /* Footer styles end */
  
+
+/* Media start */
+@media screen and (max-width: 767px){
+    .burger{
+        display: block;
+    }
+    .header_nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        /* opacity: 98%; */
+        z-index: 10;
+        padding: 100px;
+        text-align: center;
+        transform: translateX(100%); /*hide till it is necessary*/
+    }
+    .header_item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px; 
+    }
+    .header_item:last-child{
+        margin-bottom: 0px;
+    }
+
+    .header_link{
+        font-size: 30px;
+        line-height: 30px; 
+    }
+    .burger_close{
+        width: 40px;
+        height: 40px;
+        top: 40px;
+        right: 40px;
+        position: absolute;
+        z-index: 11;
+    }
+    .burger_close_line{
+        display: block;
+        position: absolute;
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        z-index: 112;
+    }
+    .burger_close_line:first-child{
+        transform: translateY(50%) rotate(45deg);
+    }
+    .burger_close_line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+/* Media end */
