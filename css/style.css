@@ -604,11 +604,14 @@ img {
         top: 0;
         left: 0;
         background-color: black;
-        /* opacity: 98%; */
         z-index: 10;
         padding: 100px;
         text-align: center;
-        transform: translateX(100%); /*hide till it is necessary*/
+        transform: translateY(-100%); /* hide till it is necessary*/
+        /* transition: .3s all linear; */
+    }
+    .header_nav_active{
+        transform: translateY(0%)
     }
     .header_item{
         width: 100%;
