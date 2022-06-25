@@ -28,6 +28,7 @@
 
  html {
      box-sizing: border-box;
+     scroll-behavior: smooth;
  }
  *,*::after, *::before {
      box-sizing: inherit;
@@ -57,7 +58,6 @@ img {
     max-width: 1260px;  
     margin: 0 auto;
     padding: 0 20px;
-
  }
 
  .section_title {
