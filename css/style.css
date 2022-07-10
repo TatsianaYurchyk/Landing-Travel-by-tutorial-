@@ -44,13 +44,13 @@
  }
 
 img {
-    max-width: 100%; /* РёР·РѕР±СЂ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ СЂР°Р·РјРµСЂ РєРѕРЅС‚РµР№РЅРµСЂР°, РІ РєРѕС‚РѕСЂРѕРј РЅР°С…РѕРґРёС‚СЃСЏ */
-    height: auto; /* С‡С‚РѕР±С‹ РІСЃРµРіРґР° СЃР¶РёРјР°Р»РѕСЃСЊ РїСЂРѕРїРѕСЂС†РёРѕРЅР°Р»СЊРЅРѕ РїРѕ РІС‹СЃРѕС‚Рµ */
+    max-width: 100%; 
+    height: auto; 
  }
 
  .wrapper {
     max-width: 1060px;  
-    margin: 0 auto;  /* С†РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ РІ СЂРѕРґРёС‚РµР»Рµ */
+    margin: 0 auto;  
     padding: 0 20px;
  }
 
@@ -67,9 +67,9 @@ img {
     position: relative;
     padding-bottom: 10px;
  }
- .section_title::after{ /* РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ Р·Р°РіРѕР»РѕРІРєР°*/
+ .section_title::after{
      display: block;
-     content: '';  /* Р±РµР· СЃРІРѕР№СЃС‚РІР° content РїСЃРµРІРґРѕСЌР»РµРјРµРЅС‚ РЅРµ РїРѕСЏРІРёС‚СЃСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ*/
+     content: ''; 
      width: 253px;
      height: 3px;
      background-color: #006DFE;
@@ -163,7 +163,7 @@ img {
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
-    padding-bottom: 223px;  /* Р·Р°С‰РёС‚Р° РѕС‚ РЅР°РµР·Р¶Р°РЅРёСЏ РєРѕРЅС‚РµРЅС‚Р° */
+    padding-bottom: 223px;  
 }
 .intro_title {
     font-weight: 500;
@@ -184,7 +184,7 @@ img {
 
 .search_form-info {
     display: flex;
-    flex-wrap: wrap; /* СѓР±СЂР°С‚СЊ РѕС‚СЃС‚СѓРїС‹ РјРµР¶РґСѓ РїРѕР»СЏРјРё С„РѕСЂРјС‹*/
+    flex-wrap: wrap; 
     margin-bottom: 153px;
 }
 
@@ -235,7 +235,7 @@ img {
     background: white;
     margin: 0 auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-    position: relative; /* РІ СЂРѕРґРёС‚РµР»Рµ РґР»СЏ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ*/
+    position: relative; 
 }
 
 .benefits_title {
@@ -248,7 +248,7 @@ img {
     left: 0;
     padding: 93px 100px 88px 100px;
     background: white;
-    transform: translateY(-100%); /* РЅР° 100% СЃРѕР±СЃС‚РІ РІС‹РѕС‚С‹ РІРІРµСЂС…*/
+    transform: translateY(-100%); 
 
 }
 .benefits_cards {
@@ -263,7 +263,7 @@ img {
 }
 
 .benefits_card-icon {
-    display: block; /* СѓР±СЂР°С‚СЊ РѕС‚СЃС‚СѓРїС‹ Сѓ svg*/
+    display: block; 
 }
 
 .benefits_card-pic {
@@ -330,7 +330,7 @@ img {
 }
 
 .places_title{
-    margin-right: 20px; /* С‡С‚РѕР±С‹ РїСЂРё РёР·РјРµРЅРµРЅРёРё СЌРєСЂР°РЅР° РЅРµ РЅР°Р»РµР·Р°Р»Рё РґСЂСѓРі РЅР° РґСЂСѓР¶РєСѓ*/
+    margin-right: 20px; 
 }
 .places_cards{
     display: grid;
@@ -341,7 +341,7 @@ img {
 
 .places_card{
     position: relative;
-    overflow: hidden; /*С‡С‚РѕР±С‹ РЅРµ РІС‹Р»Р°Р·РёР»Рѕ РїСЂРё СѓРІРµР» Р·Р° С€РёСЂРёРЅСѓ РєРѕРЅС‚РµР№РЅРµСЂР°*/
+    overflow: hidden; 
 }
 .places_card::after{
     position: absolute;
@@ -375,7 +375,7 @@ img {
 
 .places_card_pic{
     width: 100%;
-    object-fit: cover; /* РєР°Рє РёР·РѕР±СЂР°Р¶РµРЅРёРµ РјР°СЃС€С‚Р°Р± РІРЅСѓС‚СЂРё РєРѕРЅС‚РµР№РЅРµСЂР°*/
+    object-fit: cover; 
     transition: .19s;
 }
 
@@ -455,7 +455,7 @@ img {
     grid-column-gap: 57px;
     grid-row-gap: 57px;
 }
-.top_card{ /*РґР»СЏ Р·Р°С‰РёС‚С‹ РІС‹РІРѕРґР° РєРЅРѕРїРєРё РЅР° РѕРґРЅРѕРј СѓСЂРѕРІРЅРµ РїСЂРё СѓРІРµР»РёС‡РµРЅРёРё РєРѕРЅС‚РµРЅС‚Р°*/
+.top_card{ 
     display: flex;
     flex-direction: column;
     grid-column: span 2;
@@ -483,7 +483,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 0 auto 0 0; /* СЃРїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°Р»РѕСЃСЊ Рє РїСЂРѕС‚РёРІ/РєСЂР°СЋ РѕС‚ flex-end  РІ СЂРѕРґРёС‚РµР»Рµ*/
+    margin: 0 auto 0 0; 
 }
 .top_card_likes{
     font-weight: 500;
@@ -516,9 +516,8 @@ img {
     color: #FFFFFF;
     text-decoration: none;
     background: #006DFE;
-    width: 118px; /*РѕРіСЂР°РЅРёС‡РёРІР°РµРј СЂР°Р·РјРµСЂ,С‚.Рє. РёР·-Р·Р° flex-body column СЂР°СЃС€РёСЂ РєРЅРѕРїРєР° РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
-    margin: auto 0 0 0; /* СЃРјРµС‰Р°РµРј РєРЅРѕРїРєСѓ Рє РєРѕРЅС†Сѓ РєР°СЂС‚РѕС‡РєРё   */
-}
+    width: 118px; 
+    margin: auto 0 0 0; 
 
 .top_card_more:hover, .top_card_more:focus, .top_card_more:active {
     background: #0e6ee3;
